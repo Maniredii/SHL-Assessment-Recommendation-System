@@ -1,11 +1,16 @@
 [build]
-  command = "cd frontend && npm install && npm run build"
+  command = "cd frontend && npm install && npm run build && pip install -r ../requirements.txt"
   publish = "frontend/build"
   functions = "backend"
 
 [build.environment]
-  PYTHON_VERSION = "3.9"
+  PYTHON_VERSION = "3.9.18"
   NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
 
 [[redirects]]
   from = "/*"
@@ -14,4 +19,4 @@
 
 [functions]
   directory = "backend"
-  node_bundler = "esbuild" 
+  node_bundler = "esbuild"
