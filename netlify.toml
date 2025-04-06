@@ -1,0 +1,17 @@
+[build]
+  command = "cd frontend && npm install && npm run build"
+  publish = "frontend/build"
+  functions = "backend"
+
+[build.environment]
+  PYTHON_VERSION = "3.9"
+  NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  directory = "backend"
+  node_bundler = "esbuild" 
