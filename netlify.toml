@@ -1,11 +1,13 @@
 [build]
-  command = "cd frontend && npm install && npm run build && pip install -r ../requirements.txt"
+  command = """
+    cd frontend && npm install && npm run build && cd ../backend && python -m pip install --upgrade pip && pip install -r requirements.txt
+  """
   publish = "frontend/build"
   functions = "backend"
 
 [build.environment]
-  PYTHON_VERSION = "3.9.18"
   NODE_VERSION = "16"
+  PYTHON_VERSION = "3.9"
 
 [[redirects]]
   from = "/api/*"
@@ -20,3 +22,4 @@
 [functions]
   directory = "backend"
   node_bundler = "esbuild"
+  included_files = ["backend/requirements.txt", "backend/runtime.txt"]
