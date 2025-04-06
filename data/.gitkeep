@@ -1,0 +1,2 @@
+# This file ensures the data directory is included in version control
+# even if it's empty 

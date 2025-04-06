@@ -1,0 +1,182 @@
+[
+  {
+    "name": "SHL Verify Interactive",
+    "url": "https://www.shl.com/solutions/products/verify-interactive/",
+    "description": "Verify Interactive is a cognitive ability assessment tool that measures a candidate's ability to solve problems, apply reasoning, and learn new information.",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "duration": "45 minutes",
+    "test_type": "Cognitive",
+    "features": [
+      "Remote testing supported",
+      "45 minutes to complete",
+      "Adaptive testing technology",
+      "Multiple language options"
+    ]
+  },
+  {
+    "name": "SHL Coding Assessment",
+    "url": "https://www.shl.com/solutions/products/coding-assessment/",
+    "description": "SHL Coding Assessment evaluates a candidate's coding skills in various programming languages including Java, Python, JavaScript, and SQL.",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "duration": "60 minutes",
+    "test_type": "Skills",
+    "features": [
+      "Remote testing supported",
+      "60 minutes to complete",
+      "Multiple programming languages",
+      "Real-world coding challenges"
+    ]
+  },
+  {
+    "name": "SHL Personality Assessment",
+    "url": "https://www.shl.com/solutions/products/personality-assessment/",
+    "description": "This assessment measures behavioral preferences and personality traits that predict job performance and cultural fit.",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "duration": "25 minutes",
+    "test_type": "Personality",
+    "features": [
+      "Remote testing supported",
+      "25 minutes to complete",
+      "Measures key personality traits",
+      "Cultural fit indicators"
+    ]
+  },
+  {
+    "name": "SHL Situational Judgment Test",
+    "url": "https://www.shl.com/solutions/products/situational-judgment/",
+    "description": "Evaluates a candidate's judgment in workplace scenarios and their ability to make effective decisions.",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "duration": "30 minutes",
+    "test_type": "Behavioral",
+    "features": [
+      "Remote testing supported",
+      "30 minutes to complete",
+      "Workplace scenario-based",
+      "Measures decision-making skills"
+    ]
+  },
+  {
+    "name": "SHL Technical Skills Test",
+    "url": "https://www.shl.com/solutions/products/technical-skills/",
+    "description": "Assesses technical proficiency in various domains including programming, data analysis, and system architecture.",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "duration": "40 minutes",
+    "test_type": "Skills",
+    "features": [
+      "Remote testing supported",
+      "40 minutes to complete",
+      "Adaptive difficulty",
+      "Domain-specific challenges"
+    ]
+  },
+  {
+    "name": "SHL Python Programming Test",
+    "url": "https://www.shl.com/solutions/products/python-test/",
+    "description": "Specifically designed to assess Python programming skills, including syntax, data structures, and problem-solving.",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "duration": "45 minutes",
+    "test_type": "Skills",
+    "features": [
+      "Remote testing supported",
+      "45 minutes to complete",
+      "Python-specific challenges",
+      "Adaptive difficulty levels"
+    ]
+  },
+  {
+    "name": "SHL SQL Database Test",
+    "url": "https://www.shl.com/solutions/products/sql-test/",
+    "description": "Evaluates a candidate's proficiency in SQL database querying, manipulation, and optimization.",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "duration": "35 minutes",
+    "test_type": "Skills",
+    "features": [
+      "Remote testing supported",
+      "35 minutes to complete",
+      "Database challenges",
+      "Performance optimization tasks"
+    ]
+  },
+  {
+    "name": "SHL Java Development Assessment",
+    "url": "https://www.shl.com/solutions/products/java-development/",
+    "description": "Comprehensive assessment of Java programming skills, including object-oriented principles, frameworks, and best practices.",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "duration": "60 minutes",
+    "test_type": "Skills",
+    "features": [
+      "Remote testing supported",
+      "60 minutes to complete",
+      "Java-specific challenges",
+      "Object-oriented design tasks"
+    ]
+  },
+  {
+    "name": "SHL Numerical Reasoning",
+    "url": "https://www.shl.com/solutions/products/numerical-reasoning/",
+    "description": "Measures a candidate's ability to analyze and interpret numerical data and make business decisions.",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "duration": "25 minutes",
+    "test_type": "Cognitive",
+    "features": [
+      "Remote testing supported",
+      "25 minutes to complete",
+      "Adaptive difficulty",
+      "Business scenario focused"
+    ]
+  },
+  {
+    "name": "SHL Verbal Reasoning",
+    "url": "https://www.shl.com/solutions/products/verbal-reasoning/",
+    "description": "Evaluates a candidate's ability to understand and analyze written information to draw accurate conclusions.",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "duration": "30 minutes",
+    "test_type": "Cognitive",
+    "features": [
+      "Remote testing supported",
+      "30 minutes to complete",
+      "Adaptive testing",
+      "Business content-based"
+    ]
+  },
+  {
+    "name": "SHL Leadership Assessment",
+    "url": "https://www.shl.com/solutions/products/leadership-assessment/",
+    "description": "Evaluates leadership potential and identifies strengths and development areas for leadership roles.",
+    "remote_testing": true,
+    "adaptive_irt": false,
+    "duration": "40 minutes",
+    "test_type": "Personality",
+    "features": [
+      "Remote testing supported",
+      "40 minutes to complete",
+      "Leadership competency framework",
+      "Development insights"
+    ]
+  },
+  {
+    "name": "SHL Inductive Reasoning",
+    "url": "https://www.shl.com/solutions/products/inductive-reasoning/",
+    "description": "Measures a candidate's logical thinking and ability to identify patterns and relationships.",
+    "remote_testing": true,
+    "adaptive_irt": true,
+    "duration": "25 minutes",
+    "test_type": "Cognitive",
+    "features": [
+      "Remote testing supported",
+      "25 minutes to complete",
+      "Adaptive technology",
+      "Pattern recognition challenges"
+    ]
+  }
+] 
