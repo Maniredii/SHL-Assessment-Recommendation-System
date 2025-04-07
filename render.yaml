@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: shl-assessment
+    env: node
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 16
+    buildFilter:
+      paths:
+        - frontend/**
+
+  - type: web
+    name: shl-assessment-backend
+    env: python
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && python wsgi.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9
+    buildFilter:
+      paths:
+        - backend/**
