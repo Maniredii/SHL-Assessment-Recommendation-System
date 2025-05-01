@@ -2,6 +2,10 @@
 
 A web application that helps users find relevant SHL tests based on job descriptions or search queries. The application provides intelligent recommendations by analyzing user input and matching it with a comprehensive database of SHL assessments.
 
+## Repository Links
+- Frontend Repository: [https://github.com/Maniredii/shl-assessment-frontend.git](https://github.com/Maniredii/shl-assessment-frontend.git)
+- Backend Repository: [https://github.com/Maniredii/shl-assessment-backend.git](https://github.com/Maniredii/shl-assessment-backend.git)
+
 ## Solution
 For a detailed explanation of the approach and implementation, refer to the SOLUTION.md file.
 
