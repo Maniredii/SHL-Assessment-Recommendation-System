@@ -5,20 +5,33 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="SHL Test Recommender - Find the right assessment for your needs"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="description" content="SHL Test Recommender" />
     <title>SHL Test Recommender</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
+    <style>
+      .help-message {
+        text-align: center;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        margin: 10px 0;
+      }
+      .help-message a {
+        color: #0066cc;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .help-message a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="help-message">
+      <p>Having trouble? Check these resources:</p>
+      <a href="https://shl-assessmentss.vercel.app/" target="_blank" rel="noopener noreferrer">Backend Status</a>
+      <a href="https://github.com/Maniredii/SHL-Assessment-Recommendation-System.git" target="_blank" rel="noopener noreferrer">View Source Code</a>
+    </div>
   </body>
-</html> 
+</html>

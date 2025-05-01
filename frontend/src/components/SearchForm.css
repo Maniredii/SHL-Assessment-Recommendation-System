@@ -1,0 +1,362 @@
+.error-message {
+  color: red;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border-radius: 4px;
+}
+
+.recommendations {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.recommendation-item {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recommendation-item h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.backend-status {
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  color: #856404;
+}
+
+.github-link {
+  text-align: center;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.connection-status a, .github-link a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.connection-status a:hover, .github-link a:hover {
+  text-decoration: underline;
+}
+
+.debug-info {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.info-message {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  color: #856404;
+}
+
+.info-message p {
+  margin: 8px 0;
+}
+
+.info-message a {
+  color: #0066cc;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.info-message a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  text-align: center;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-links p {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 16px;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.github-button:hover {
+  background-color: #2f363d;
+  text-decoration: none;
+}
+
+.github-button span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.help-links {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.help-links p {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.status-link, .github-link {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.status-link {
+  background-color: #e7f3ff;
+  color: #0066cc;
+  border: 1px solid #cce5ff;
+}
+
+.github-link {
+  background-color: #24292e;
+  color: white;
+}
+
+.status-link:hover, .github-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alert-links {
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert-message {
+  color: #856404;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.backend-link, .code-link {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.backend-link {
+  background-color: #0066cc;
+}
+
+.code-link {
+  background-color: #28a745;
+}
+
+.backend-link:hover, .code-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+.important-links {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.important-links p {
+  margin-bottom: 12px;
+  color: #856404;
+  font-weight: 500;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.check-backend, .view-code {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.check-backend {
+  background-color: #007bff;
+  color: white;
+}
+
+.view-code {
+  background-color: #28a745;
+  color: white;
+}
+
+.check-backend:hover, .view-code:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+.important-notice {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.notice-message {
+  color: #856404;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.notice-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.notice-link {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.notice-link.backend {
+  background-color: #0066cc;
+}
+
+.notice-link.github {
+  background-color: #24292e;
+}
+
+.notice-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.error-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fff5f5;
+  border: 1px solid #feb2b2;
+  border-radius: 4px;
+}
+
+.error-help {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.error-help ul {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.error-help a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.error-help a:hover {
+  text-decoration: underline;
+}

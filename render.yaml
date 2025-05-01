@@ -1,10 +1,19 @@
 services:
   - type: web
-    name: shl-assessment-frontend
-    env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    name: shl-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn backend.app:app
     envVars:
-      - key: NODE_VERSION
-        value: 16.0.0
-    rootDir: frontend
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: PORT
+        value: 8000
+
+  - type: static
+    name: shl-frontend
+    buildCommand: cd frontend && npm install && npm run build
+    publish: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://shl-backend.onrender.com
