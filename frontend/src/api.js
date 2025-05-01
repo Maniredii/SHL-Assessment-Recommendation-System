@@ -1,29 +1,30 @@
 import axios from 'axios';
 
-// API configuration
-const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:5000';
+const BACKEND_URL = 'https://shl-assessment-backend-c8ug.onrender.com';
 
+// Create axios instance with the correct configuration
 export const axiosInstance = axios.create({
-  baseURL: API_URL,
+  baseURL: BACKEND_URL,
   headers: {
     'Content-Type': 'application/json'
   },
-  timeout: 10000 // 10 seconds timeout
+  timeout: 60000 // 60 seconds timeout since Render free tier can be slow to wake up
 });
 
 // Add request interceptor for debugging
 axiosInstance.interceptors.request.use(
   (config) => {
-    console.log('Making API request:', {
-      url: config.url,
+    // Log the full URL being called
+    const fullUrl = `${config.baseURL}${config.url}`;
+    console.log('Making API request to:', fullUrl, {
       method: config.method,
-      baseURL: config.baseURL,
+      headers: config.headers,
       data: config.data
     });
     return config;
   },
   (error) => {
-    console.error('Request error:', error.message);
+    console.error('Request error:', error);
     return Promise.reject(error);
   }
 );
@@ -38,21 +39,40 @@ axiosInstance.interceptors.response.use(
     return response;
   },
   (error) => {
-    if (!error.response) {
-      const errorMessage = `Unable to connect to the backend server at ${API_URL}. Please ensure the server is running.`;
-      console.error('Network Error:', errorMessage);
+    // Enhanced error logging
+    const errorDetails = {
+      message: error.message,
+      status: error.response?.status,
+      statusText: error.response?.statusText,
+      data: error.response?.data,
+      url: error.config?.url,
+      fullUrl: `${error.config?.baseURL}${error.config?.url}`
+    };
+    console.error('API Error Details:', errorDetails);
+
+    if (error.response?.status === 0 || error.code === 'ERR_NETWORK') {
       return Promise.reject({
         response: {
-          data: { error: errorMessage }
+          data: {
+            error: 'CORS Error: The backend server is not accessible. This might be due to CORS restrictions or the server being down.'
+          }
         }
       });
     }
 
-    console.error('API Error:', {
-      status: error.response?.status,
-      data: error.response?.data,
-      message: error.message
-    });
+    if (!error.response) {
+      const errorMessage = error.code === 'ECONNABORTED'
+        ? 'The request timed out. The backend server might be starting up (this can take up to 30 seconds on the free tier). Please try again.'
+        : `Network error: Unable to connect to ${BACKEND_URL}. Please check if the backend server is running.`;
+      
+      return Promise.reject({
+        response: {
+          data: {
+            error: errorMessage
+          }
+        }
+      });
+    }
 
     return Promise.reject(error);
   }

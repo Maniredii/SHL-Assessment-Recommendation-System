@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: shl-frontend
+    buildCommand: npm install && npm run build
+    publish: build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://shl-assessment-backend-c8ug.onrender.com
+      - key: NODE_VERSION
+        value: 16.0.0 
